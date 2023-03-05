@@ -43,7 +43,7 @@ namespace ChatBot
             myListBox.Visibility = Visibility.Visible;
             user.HorizontalAlignment = HorizontalAlignment.Right;
             myListBox.Width = 700;
-            myListBox.Height =300;
+            myListBox.Height =400;
             myListBox.Margin = new Thickness(0, 20, 0, 90);
             myListBox.BorderThickness = new Thickness(1);
             myListBox.BorderBrush = new SolidColorBrush(Colors.Gray);
@@ -56,7 +56,7 @@ namespace ChatBot
             textBox.TabIndex = 0;
             textBox.FontSize = 24;
             textBox.Padding = new Thickness(7);
-            textBox.Margin = new Thickness(0, 350, 100, 10);
+            textBox.Margin = new Thickness(0, 450, 100, 10);
             textBox.BorderThickness = new Thickness(1);
             textBox.BorderBrush = new SolidColorBrush(Colors.Gray);
             //SEND BUTTON
@@ -65,7 +65,7 @@ namespace ChatBot
             sendBtn.BorderThickness = new Thickness(0);
             sendBtn.Content = "SEND";
             sendBtn.Background = new SolidColorBrush(Colors.Orange);
-            sendBtn.Margin = new Thickness(470, 350, 0, 10);
+            sendBtn.Margin = new Thickness(470, 450, 0, 10);
             sendBtn.Click += SendBtn_Click;
 
             mainGrid.Children.Add(textBox);
