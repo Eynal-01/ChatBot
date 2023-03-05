@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ChatBot
 {
     /// <summary>
-    /// Interaction logic for message.xaml
+    /// Interaction logic for ServerUC.xaml
     /// </summary>
-    public partial class message : UserControl
+    public partial class ServerUC : UserControl
     {
-        public message()
+        public ServerUC()
         {
             InitializeComponent();
         }

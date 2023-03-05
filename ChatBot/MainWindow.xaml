@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatBot"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="800"  PreviewKeyDown="Window_PreviewKeyDown"
+        WindowStartupLocation="CenterScreen"
+        Background="black">
+    <Grid >
+        <Grid Name="mainGrid">
+            <!--<TextBlock Foreground="Wheat" FontWeight="ExtraBlack" FontSize="50" HorizontalAlignment="Center" Margin="0,0,0,300" Width="300" Height="100">CHAT APP
+            <TextBlock.BitmapEffect>
+                <DropShadowBitmapEffect ShadowDepth="5" Color="Wheat" Direction="150"></DropShadowBitmapEffect>
+            </TextBlock.BitmapEffect>
+        </TextBlock>-->
+            
+            <TextBlock Height="100" Margin="0,0,0,280" FontSize="70" FontWeight="ExtraBlack" HorizontalAlignment="Center" Padding="35" Foreground="orange" FontFamily="Courier New"  >Chat bot
+                <TextBlock.BitmapEffect>
+                    <DropShadowBitmapEffect ShadowDepth="3" Direction="200" Color="Black"></DropShadowBitmapEffect>
+                </TextBlock.BitmapEffect></TextBlock>
+            <Button Name="startBtn" Click="startBtn_Click" Background="Transparent" BorderThickness="0" Height="50" Margin="0,330,0,0" FontSize="30" FontWeight="ExtraBlack" HorizontalAlignment="Center"  Foreground="orange" FontFamily="Courier New"  >Start chat
+                <Button.BitmapEffect>
+                    <DropShadowBitmapEffect ShadowDepth="3" Direction="200" Color="Black"></DropShadowBitmapEffect>
+                </Button.BitmapEffect>
+            </Button>
+        </Grid>
+        <Grid Name="myGrid" >
+            <ListBox BorderThickness="0" Name="myListBox" Visibility="Hidden">
+            </ListBox>
+        </Grid>
     </Grid>
 </Window>

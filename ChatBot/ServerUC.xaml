@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="ChatBot.ServerUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:ChatBot"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="250"
+             Margin="10, 0,250, 0">
+    <Grid Background="Transparent">
+        <TextBox FontSize="15" Background="Transparent" Foreground="White" BorderThickness="0" x:Name="datetime" Margin="200,40,0,0" HorizontalContentAlignment="Center" Width="50" Height="20" Text="{Binding Source={x:Static sys:DateTime.Now},  StringFormat='HH:mm ',Mode=OneWay}"/>
+        <TextBlock TextAlignment="Left" FontSize="20" Foreground="White" Name="serverTxtBlock" Margin="0,0,130,0" Height="100" Width="200"  TextWrapping="Wrap" ></TextBlock>
+    </Grid>
+</UserControl>
